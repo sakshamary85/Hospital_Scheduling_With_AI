@@ -1,0 +1,51 @@
+# Hospital AI System Environment Configuration
+# Copy this file to .env and update the values
+
+# Database Configuration
+POSTGRES_HOST=localhost
+POSTGRES_PORT=5432
+POSTGRES_DB=hospital_ai_db
+POSTGRES_USER=hospital_user
+POSTGRES_PASSWORD=your_secure_password
+
+# ML Model Configuration
+MODEL_PATH=C:\Users\saksh\OneDrive\Desktop\No-show_Hospital\Medical-Appointment-No-shows-prediction\model_save\no_show_model.pkl
+FEATURE_COUNT=98
+PREDICTION_THRESHOLD=0.5
+
+# Risk Assessment Thresholds
+LOW_RISK_THRESHOLD=0.3
+MEDIUM_RISK_THRESHOLD=0.6
+HIGH_RISK_THRESHOLD=0.8
+
+# Hospital Configuration
+WORKING_HOURS_START=9
+WORKING_HOURS_END=18
+SLOT_DURATION_MINUTES=30
+SLOTS_PER_DAY=18
+
+# Buffer Times (minutes)
+LOW_RISK_BUFFER=0
+MEDIUM_RISK_BUFFER=15
+HIGH_RISK_BUFFER=30
+
+# API Configuration
+HOST=0.0.0.0
+PORT=8000
+DEBUG=False
+API_VERSION=v1
+
+# Security
+JWT_SECRET_KEY=your-super-secret-jwt-key-here
+JWT_ALGORITHM=HS256
+ACCESS_TOKEN_EXPIRE_MINUTES=30
+
+# Logging
+LOG_LEVEL=INFO
+LOG_FILE=logs/hospital_ai.log
+ERROR_LOG_FILE=logs/error.log
+
+# Notifications
+SMS_ENABLED=True
+EMAIL_ENABLED=True
+PUSH_NOTIFICATIONS_ENABLED=True
